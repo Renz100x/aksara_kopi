@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coklat-tua: #5a3f3f;
+  --color-coklat-sedang: #a67b5b;
+  --color-coklat-muda: #f8ecde;
+  --color-coklat-sangat-muda: #fed8b1;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -ms-overflow-style: none;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-h1-fade-up {
+    animation: fadeInUp 0.7s ease-out forwards;
+}
+.animate-p-fade-right {
+    animation: fadeInRight 0.7s ease-out forwards;
+}
+
+#scroll-auto-play-on-scroll pre {
+  left: 3rem;
+  width: 12rem;
+}
+
+#scroll-auto-play-on-scroll .circle {
+  margin: 0;
+}
